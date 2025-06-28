@@ -1,0 +1,27 @@
+
+body {
+  background: #121212;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+h1, h2 {
+  color: #00e676;
+}
+.track {
+  background: #1f1f1f;
+  margin: 15px auto;
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 500px;
+}
+.track a {
+  display: inline-block;
+  margin-top: 5px;
+  background: #00c853;
+  color: white;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 5px;
+}
