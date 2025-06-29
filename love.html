@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>❤️ Love Songs</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header><h1>❤️ Love Songs</h1></header>
+<img src="images/love.jpg" alt="❤️ Love Songs" class="banner">
+
+<main>
+<ul class="songlist">
+<li>
+  <div class="song-info">
+    <img src="images/placeholder.jpg" alt="Cover" class="cover-art">
+    <div class="song-details">
+      <div class="song-title">I Want Love</div>
+      <div class="stats">
+        Likes: <span class="like-count">0</span> |
+        Dislikes: <span class="dislike-count">0</span> |
+        Downloads: <span class="download-count">0</span>
+      </div>
+    </div>
+  </div>
+  <div class="song-actions">
+    <button onclick="like(this)">👍</button>
+    <button onclick="dislike(this)">👎</button>
+    <a href="https://drive.google.com/uc?export=download&id=1-IKh3IJU6b54s_7XDyH3LOwlMn-Z4BIE" download="I Want Love.mp3" onclick="download(this)">Download</a>
+  </div>
+</li>
+</ul>
+
+<nav>
+<a href="index.html">&laquo; Back</a> | <a href="trap.html">Next &raquo;</a>
+</nav>
+
+</main>
+
+<footer><p>&copy; 2025 Lity Rate Music</p></footer>
+
+<script>
+function like(btn) {
+    const count = btn.parentElement.parentElement.querySelector('.like-count');
+    count.textContent = parseInt(count.textContent) + 1;
+}
+function dislike(btn) {
+    const count = btn.parentElement.parentElement.querySelector('.dislike-count');
+    count.textContent = parseInt(count.textContent) + 1;
+}
+function download(btn) {
+    const count = btn.parentElement.parentElement.querySelector('.download-count');
+    count.textContent = parseInt(count.textContent) + 1;
+}
+</script>
+
+</body>
+</html>
